@@ -8,13 +8,13 @@
 >
     <testsuites>
         <testsuite name="nice-academy">
-            <directory>./test/</directory>
+            <directory>tests/php/basic/test/</directory>
         </testsuite>
     </testsuites>
 
     <filter>
         <whitelist>
-            <directory>./src/</directory>
+            <directory>./tests/php/basic/src/</directory>
         </whitelist>
     </filter>
 </phpunit>
