@@ -10,12 +10,12 @@
     },
     "autoload": {
         "psr-4": {
-            "NiceshopsDev\\NiceAcademy\\": "src/"
+            "NiceshopsDev\\NiceAcademy\\Tests\\Basic\\": "tests/php/basic/src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "NiceshopsDev\\NiceAcademy\\": "test/"
+            "NiceshopsDev\\NiceAcademy\\Tests\\Basic\\": "tests/php/basic/test"
         }
     },
     "scripts": {
