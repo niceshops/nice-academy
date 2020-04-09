@@ -7,7 +7,7 @@
          beStrictAboutChangesToGlobalState="true"
 >
     <testsuites>
-        <testsuite name="nice-academy">
+        <testsuite name="tests-php-basic">
             <directory>tests/php/basic/test/</directory>
         </testsuite>
     </testsuites>
