@@ -10,12 +10,14 @@
     },
     "autoload": {
         "psr-4": {
-            "NiceshopsDev\\NiceAcademy\\Tests\\Basic\\": "tests/php/basic/src"
+            "NiceshopsDev\\NiceAcademy\\Tests\\Basic\\": "tests/php/basic/src",
+            "NiceshopsDev\\NiceAcademy\\Tests\\Advanced\\": "tests/php/advanced/src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "NiceshopsDev\\NiceAcademy\\Tests\\Basic\\": "tests/php/basic/test"
+            "NiceshopsDev\\NiceAcademy\\Tests\\Basic\\": "tests/php/basic/test",
+            "NiceshopsDev\\NiceAcademy\\Tests\\Advanced\\": "tests/php/advanced/test"
         }
     },
     "scripts": {

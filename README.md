@@ -22,3 +22,4 @@ $ composer run-script test -- --testsuite tests-php-basic
 
 ## Testaufgaben
 - [PHP Basis Testaufgaben](tests/php/basic/README.md)
+- [PHP Advanced Testaufgaben](tests/php/advanced/README.md)
