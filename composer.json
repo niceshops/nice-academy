@@ -21,7 +21,9 @@
         }
     },
     "scripts": {
-        "test" : "vendor/bin/phpunit"
+        "test" : "vendor/bin/phpunit",
+        "test-php-basic" : "vendor/bin/phpunit --testsuite test-php-basic",
+        "test-php-advanced" : "vendor/bin/phpunit --testsuite test-php-advanced"
     },
     "extra": {
         "branch-alias": {

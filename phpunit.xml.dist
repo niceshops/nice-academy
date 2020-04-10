@@ -7,14 +7,18 @@
          beStrictAboutChangesToGlobalState="true"
 >
     <testsuites>
-        <testsuite name="tests-php-basic">
+        <testsuite name="test-php-basic">
             <directory>tests/php/basic/test/</directory>
+        </testsuite>
+        <testsuite name="test-php-advanced">
+            <directory>tests/php/advanced/test/</directory>
         </testsuite>
     </testsuites>
 
     <filter>
         <whitelist>
             <directory>./tests/php/basic/src/</directory>
+            <directory>./tests/php/advanced/src/</directory>
         </whitelist>
     </filter>
 </phpunit>

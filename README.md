@@ -12,12 +12,19 @@ $ composer create-project niceshops-dev/nice-academy /your/project/path "dev-mas
 - oder direkter Download des [aktuellstes Release](https://github.com/niceshops-dev/nice-academy/archive/v0.1-beta.zip)
 
 ### Unit Tests ausführen
+alle Tests
 ```bash
 $ composer run-script test
 ```
-oder nur Test Suite für [PHP Basis Testaufgaben](tests/php/basic/README.md)
+nur Test Suite für [PHP Basis Testaufgaben](tests/php/basic/README.md)
 ```bash
-$ composer run-script test -- --testsuite tests-php-basic
+$ composer run-script test-php-basic
+$ composer run-script test -- --testsuite test-php-basic
+```
+nur Test Suite für [PHP Advanced Testaufgaben](tests/php/advanced/README.md)
+```bash
+$ composer run-script test-php-advanced
+$ composer run-script test -- --testsuite test-php-advanced
 ```
 
 ## Testaufgaben
