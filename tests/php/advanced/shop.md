@@ -1,4 +1,4 @@
-# Shop Refactoring und Unit Tests (~1h15m)
+# Shop Refactoring und Unit Tests (~1h45m)
 
 Der Basis Namespace für alle folgenden Beispiele ist `\NiceshopsDev\NiceAcademy\Tests\Advanced\Shop`.
 
@@ -27,4 +27,22 @@ Die Vergleichslogik dazu ist aktuell direkt in der Methode implementiert, obwohl
 
 Wende für den Vergleich in der Methode `Product::hasSameNumber` die Klasse `ProductComparator` entsprechend an.\
 Achte dabei darauf das die Funktionalität der Methode `Product::hasSameNumber` erhalten bleibt.\
-Überprüfe deine Implementierung anhand von entsprechenden Unit Tests.
+Überprüfe deine Implementierung anhand entsprechender Unit Tests.
+
+## ProductGroup Klasse Refactoring (~30m)
+Die Klasse `ProductGroup` repräsentiert eine Gruppe von Produkten.\
+Es können beliebige Produkte hinzugefügt und wieder entfernt werden sowie diverse aggregierte Informationen (Anzahl) abgefragt werden.
+
+### Produkte entfernen (~15m)
+Bei genauerer Betrachtung der Methode `ProductGroup::removeProduct` besteht die Möglichkeit für eine Performance-Optimierung.\
+Nimm die deiner Meinung nach notwendigen Anpassungen an der Methode vor und implementiere im Testfall `ProductGroupTest` für die Methode folgende Unit Tests:
+- Produktliste ist `[]`; 1x Produkt A entfernen; Produktliste ist `[]`.
+- Produktliste ist `[ "Produkt A", "Produkt B" ]`; Produkt A entfernen; Produktliste ist `[ "Produkt B" ]`. 
+- Produktliste ist `[ "Produkt A", "Produkt B" ]`; Produkt B entfernen; Produktliste ist `[ "Produkt A" ]`. 
+- Produktliste ist `[ "Produkt A", "Produkt B", "Produkt A" ]`; Produkt A entfernen; Produktliste ist `[ "Produkt B" ]`.
+
+### Anzahl der Produkte (~15m)
+Die Methode `ProductGroup::getProductCount` berechnet die Anzahl für das an die Methode übergebene Produkt in der Produktgruppe.\
+Für den Produktvergleich soll die Klasse `ProductComparator` verwendet werden.\
+Bau die Methode für die Anwendung der Klasse `ProductComparator` entsprechend um.\
+Überprüfe deine Implementierung anhand entsprechender Unit Tests.
