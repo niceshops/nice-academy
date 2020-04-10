@@ -2,7 +2,8 @@
 
 __Hinweis__: Vor der Durchführung dieser Testaufgaben ist es empfehlenswert zuvor die Aufgaben unter [Shop Refactoring und Unit Tests](shop.md) zu machen.
 
-Der Basis Namespace für alle folgenden Beispiele ist `\NiceshopsDev\NiceAcademy\Tests\Advanced\Shop`.
+Der Basis Namespace für alle folgenden Beispiele ist `\NiceshopsDev\NiceAcademy\Tests\Advanced\Shop`.\
+Alle Klassen zu den Testaufgaben befinden sich im Ordner [src/Shop](src/Shop) bzw. [test/Shop](test/Shop) für die Unit Tests.
 
 ## Produkte anhand der Nummer von einer Produktgruppe entfernen  (~30m)
 Als Vorbereitung und für eine kurze Beschreibung der Klasse [`ProductGroup`](src/Shop/ProductGroup.php) siehe unter [ProductGroup Klasse Refactoring](shop.md#productgroup-klasse-refactoring-30m).\
