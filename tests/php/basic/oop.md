@@ -1,4 +1,4 @@
-# Aufgaben zum Thema objektorientiertes Programmieren
+# Objektorientierte Programmierung
 
 Der Basis Namespace für alle folgenden Beispiele ist `\NiceshopsDev\NiceAcademy\Tests\Basic`.\
 Alle Klassen zu den Testaufgaben befinden sich im Ordner [src](src) bzw. [test](test) für die Unit Tests.
