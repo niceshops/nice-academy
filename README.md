@@ -30,8 +30,6 @@ $ composer run-script test -- --testsuite test-php-advanced
 ## Testaufgaben
 - [PHP Basis Testaufgaben](tests/php/basic/README.md)
   - [Objektorientierte Programmierung](oop.md) (~1h)
- 
-
-- [PHP Advanced Testaufgaben](tests/php/advanced/README.md)
++ [PHP Advanced Testaufgaben](tests/php/advanced/README.md)
   - [Shop Refactoring und Unit Tests](shop.md) (~1h45m)
   - [Shop Cart Implementierung](shop-cart.md) (~2h)

@@ -1,6 +1,6 @@
 # Shop Cart Implementierung (2h)
 
-__Hinweis__: Vor der Durchführung dieser Testaufgaben ist es empfehlenswert zuvor die Aufgaben unter [Shop Refactoring und Unit Tests](shop.md) zu machen.
+> __Hinweis__: Vor der Durchführung dieser Testaufgaben ist es empfehlenswert zuvor die Aufgaben unter [Shop Refactoring und Unit Tests](shop.md) zu machen.
 
 Der Basis Namespace für alle folgenden Beispiele ist `\NiceshopsDev\NiceAcademy\Tests\Advanced\Shop`.\
 Alle Klassen zu den Testaufgaben befinden sich im Ordner [src/Shop](src/Shop) bzw. [test/Shop](test/Shop) für die Unit Tests.
