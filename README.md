@@ -9,7 +9,7 @@ $ composer create-project niceshops-dev/nice-academy /your/project/path "dev-mas
 
 ### Release Download
 - siehe [verfügbare Releases](https://github.com/niceshops-dev/nice-academy/releases)
-- oder direkter Download des [aktuellstes Release](https://github.com/niceshops-dev/nice-academy/archive/v0.1-beta.zip)
+- oder direkter Download des [aktuellstes Release](https://github.com/niceshops-dev/nice-academy/archive/v0.2-beta.zip)
 
 ### Unit Tests ausführen
 alle Tests
