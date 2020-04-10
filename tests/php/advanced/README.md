@@ -5,4 +5,5 @@ In Klammer am Ende jeder Aufgabe steht zur zeitlichen Orientierung eine ungefäh
 
 Alle Klassen zu den Testaufgaben befinden sich im Ordner [src](src) bzw. [test](test) für die Unit Tests.
 
-- [Shop Refactoring und Unit Tests](shop.md) (~1h15m)
+- [Shop Refactoring und Unit Tests](shop.md) (~1h45m)
+- [Shop Cart Implementierung](shop-cart.md) (~2h)
