@@ -11,7 +11,7 @@ Bei genauerer Betrachtung der Klasse [`PriceItem`](src/Shop/PriceItem.php) gibt 
 Nimm die deiner Meinung nach notwendigen Anpassungen vor und erweitere den Testfall [`PriceItemTest`](test/Shop/PriceItemTest.php) entsprechend.
 
 ## Product Klasse Refactoring (~1h)
-Die Klasse [`Product`](src/Shop/Product.php) repräsentiert ein einzelnes Produkt im Shop und besteht aus einer Produktnummer, einem Titel und dem Preis.\
+Die Klasse [`Product`](src/Shop/Product.php) repräsentiert ein einzelnes Produkt im Shop und besteht aus einer Produktnummer, einem Titel und dem Preis.
 
 ### PriceItem Anwendung (~15m)
 Für das Preis-Handling soll das [`PriceItem`](src/Shop/PriceItem.php) verwendet werden.
