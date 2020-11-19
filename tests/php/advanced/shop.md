@@ -24,7 +24,7 @@ Passe die Methode [`Product::__toString`](src/Shop/Product.php) entsprechend an 
 
 ### Produktvergleich optimieren (~30m)
 Über die Methode [`Product::hasSameNumber`](src/Shop/Product.php) kann überprüft werden ob zwei Produkte dieselbe Produktnummer aufweisen.\
-Die Vergleichslogik dazu ist aktuell direkt in der Methode implementiert, obwohl es dafür eine eigene Klasse [`ProductComparator`](src/Shop/ProductComparator.php) gibt.\
+Die Vergleichslogik dazu ist aktuell direkt in der Methode implementiert, obwohl es dafür eine eigene Klasse [`ProductComparator`](src/Shop/ProductComparator.php) gibt.
 
 Wende für den Vergleich in der Methode [`Product::hasSameNumber`](src/Shop/Product.php) die Klasse [`ProductComparator`](src/Shop/ProductComparator.php) entsprechend an.\
 Achte dabei darauf das die Funktionalität der Methode [`Product::hasSameNumber`](src/Shop/Product.php) erhalten bleibt.\

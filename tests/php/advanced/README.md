@@ -7,3 +7,6 @@ Alle Klassen zu den Testaufgaben befinden sich im Ordner [src](src) bzw. [test](
 
 - [Shop Refactoring und Unit Tests](shop.md) (~1h45m)
 - [Shop Cart Implementierung](shop-cart.md) (~2h)
+
+**Wichtig**: Jede einzelne Aufgabe bzw. Teilaufgabe aus den Aufgabenbereichen ist in einem separaten Commit zu machen. \
+Die Commit Message sollte der Titel der Aufgabe und der Teilaufgabe (sofern vorhanden) sein.
