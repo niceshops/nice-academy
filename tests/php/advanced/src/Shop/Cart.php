@@ -6,5 +6,5 @@ namespace NiceshopsDev\NiceAcademy\Tests\Advanced\Shop;
 
 class Cart
 {
-    
+
 }

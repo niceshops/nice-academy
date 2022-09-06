@@ -8,25 +8,26 @@ use PHPUnit\Framework\TestCase;
 
 class ProductTest extends TestCase
 {
-    
-    
     /**
      * @var Product|MockObject
      */
     protected $object;
-    
-    
-    protected function setUp()
+
+    /**
+     * @return void
+     */
+    protected function setUp(): void
     {
-        $this->object = $this->getMockBuilder(Product::class)->disableOriginalConstructor()->getMockForAbstractClass();
+        $this->object = $this->getMockBuilder(Product::class)
+            ->disableOriginalConstructor()
+            ->getMockForAbstractClass();
     }
-    
-    
+
     /**
      * @group  integration
      * @small
      */
-    public function testTestClassExists()
+    public function testTestClassExists(): void
     {
         $this->assertTrue(class_exists(Product::class));
         $this->assertTrue($this->object instanceof Product);

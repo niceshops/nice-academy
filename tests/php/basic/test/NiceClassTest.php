@@ -8,25 +8,24 @@ use PHPUnit\Framework\TestCase;
 
 class NiceClassTest extends TestCase
 {
-    
-    
     /**
      * @var NiceClass|MockObject
      */
     protected $object;
-    
-    
-    protected function setUp()
+
+    /**
+     * @return void
+     */
+    protected function setUp(): void
     {
         $this->object = $this->getMockBuilder(NiceClass::class)->disableOriginalConstructor()->getMockForAbstractClass();
     }
-    
-    
+
     /**
      * @group  integration
      * @small
      */
-    public function testTestClassExists()
+    public function testTestClassExists(): void
     {
         $this->assertTrue(class_exists(NiceClass::class));
         $this->assertTrue($this->object instanceof NiceClass);
