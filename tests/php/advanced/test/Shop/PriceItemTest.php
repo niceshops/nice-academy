@@ -9,62 +9,60 @@ use PHPUnit\Framework\TestCase;
 
 class PriceItemTest extends TestCase
 {
-    
     /**
      * @var PriceItem|MockObject
      */
     protected $object;
-    
-    
-    protected function setUp()
+
+    /**
+     * @return void
+     */
+    protected function setUp(): void
     {
         $this->object = $this->getMockBuilder(PriceItem::class)->disableOriginalConstructor()->getMockForAbstractClass();
     }
-    
-    
+
     /**
      * @group  integration
      * @small
      */
-    public function testTestClassExists()
+    public function testTestClassExists(): void
     {
         $this->assertTrue(class_exists(PriceItem::class));
         $this->assertTrue($this->object instanceof PriceItem);
     }
-    
-    
+
     /**
      * @group  unit
      * @small
      *
      * @covers \NiceshopsDev\NiceAcademy\Tests\Advanced\Shop\PriceItem::addPrice_by_Value
      */
-    public function testAddPrice_by_Value()
+    public function testAddPrice_by_Value(): void
     {
         /**
          * @var PriceItem|MockObject $priceItem
          */
         $priceItem = $this->getMockBuilder(PriceItem::class)->disableOriginalConstructor()->getMockForAbstractClass();
         $this->assertSame(0.0, $priceItem->price);
-        
+
         $priceItem->addPrice_by_Value(10.0);
         $this->assertSame(10.0, $priceItem->price);
-        
+
         $priceItem->addPrice_by_Value(-4.5);
         $this->assertSame(5.5, $priceItem->price);
     }
-    
+
     /**
      * @return Generator
      */
-    public function addPriceDataProvider()
+    public function addPriceDataProvider(): Generator
     {
         yield [[], 0];
         yield [[10, -5], 5];
         yield [[10, -5, -20, 3.5], -11.5];
     }
-    
-    
+
     /**
      * @group        unit
      * @small
@@ -76,17 +74,17 @@ class PriceItemTest extends TestCase
      * @param array $arrPrice
      * @param float $expectedPrice
      */
-    public function testAddPrice(array $arrPrice, float $expectedPrice)
+    public function testAddPrice(array $arrPrice, float $expectedPrice): void
     {
-        /**
-         * @var PriceItem|MockObject $priceItem
-         */
-        $priceItem = $this->getMockBuilder(PriceItem::class)->disableOriginalConstructor()->getMockForAbstractClass();
-        
+        /** @var PriceItem|MockObject $priceItem */
+        $priceItem = $this->getMockBuilder(PriceItem::class)
+            ->disableOriginalConstructor()
+            ->getMockForAbstractClass();
+
         foreach ($arrPrice as $price) {
             $priceItem->addPrice(new PriceItem($price));
         }
-        
+
         $this->assertSame($expectedPrice, $priceItem->price);
     }
 }

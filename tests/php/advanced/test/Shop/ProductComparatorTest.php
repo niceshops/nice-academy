@@ -8,28 +8,28 @@ use PHPUnit\Framework\TestCase;
 
 class ProductComparatorTest extends TestCase
 {
-    
-    
     /**
      * @var ProductComparator|MockObject
      */
     protected $object;
-    
-    
-    protected function setUp()
+
+    /**
+     * @return void
+     */
+    protected function setUp(): void
     {
-        $this->object = $this->getMockBuilder(ProductComparator::class)->disableOriginalConstructor()->getMockForAbstractClass();
+        $this->object = $this->getMockBuilder(ProductComparator::class)
+            ->disableOriginalConstructor()
+            ->getMockForAbstractClass();
     }
-    
-    
+
     /**
      * @group  integration
      * @small
      */
-    public function testTestClassExists()
+    public function testTestClassExists(): void
     {
         $this->assertTrue(class_exists(ProductComparator::class));
         $this->assertTrue($this->object instanceof ProductComparator);
     }
-    
 }

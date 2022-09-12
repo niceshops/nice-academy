@@ -9,9 +9,8 @@ class ProductGroup
     /**
      * @var Product[]
      */
-    private $arrProduct = [];
-    
-    
+    private array $arrProduct = [];
+
     /**
      * @param Product $product
      *
@@ -20,11 +19,10 @@ class ProductGroup
     public function addProduct(Product $product): self
     {
         $this->arrProduct[] = $product;
-        
+
         return $this;
     }
-    
-    
+
     /**
      * @param Product $product
      *
@@ -39,11 +37,10 @@ class ProductGroup
                 break;
             }
         }
-        
+
         return $this;
     }
-    
-    
+
     /**
      * @param Product $product
      *
@@ -57,11 +54,10 @@ class ProductGroup
                 ++$count;
             }
         }
-        
+
         return $count;
     }
-    
-    
+
     /**
      * @return int
      */
@@ -69,23 +65,21 @@ class ProductGroup
     {
         return count($this->getProduct_List());
     }
-    
-    
+
     /**
      * Remove $maxCount amount of products with the passed product number.
      *
-     * @param string   $number
+     * @param string $number
      * @param int|null $maxCount NULL means no limit (all products with defined number)
      *
-     * @todo implement method
      * @return array    list of removed products
+     * @todo implement method
      */
-    public function removeProducts_with_Number(string $number, int $maxCount = null)
+    public function removeProducts_with_Number(string $number, int $maxCount = null): array
     {
         return [];
     }
-    
-    
+
     /**
      * @return Product[]
      */

@@ -9,9 +9,8 @@ class ProductComparator
     /**
      * @var Product
      */
-    private $product;
-    
-    
+    private Product $product;
+
     /**
      * ProductComparator constructor.
      *
@@ -21,8 +20,7 @@ class ProductComparator
     {
         $this->product = $product;
     }
-    
-    
+
     /**
      * @return Product
      */
@@ -30,8 +28,7 @@ class ProductComparator
     {
         return $this->product;
     }
-    
-    
+
     /**
      * Checks if passed product is the same instance
      *
@@ -39,7 +36,7 @@ class ProductComparator
      *
      * @return bool
      */
-    public function isSame(Product $product)
+    public function isSame(Product $product): bool
     {
         return $this->getProduct() === $product;
     }

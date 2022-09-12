@@ -9,9 +9,8 @@ class PriceItem
     /**
      * @var float
      */
-    public $price = 0.0;
-    
-    
+    public float $price = 0.0;
+
     /**
      * PriceItem constructor.
      *
@@ -21,30 +20,28 @@ class PriceItem
     {
         $this->price = $price;
     }
-    
-    
+
     /**
      * @param float $price
      *
      * @return $this
      */
-    public function addPrice_by_Value(float $price)
+    public function addPrice_by_Value(float $price): self
     {
         $this->price += $price;
-        
+
         return $this;
     }
-    
-    
+
     /**
      * @param PriceItem $priceItem
      *
      * @return $this
      */
-    public function addPrice(PriceItem $priceItem)
+    public function addPrice(PriceItem $priceItem): self
     {
         $this->price += $priceItem->price;
-        
+
         return $this;
     }
 }

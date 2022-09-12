@@ -6,23 +6,20 @@ namespace NiceshopsDev\NiceAcademy\Tests\Advanced\Shop;
 
 class Product
 {
-    
-    
     /**
      * @var string
      */
-    private $number;
-    
-    
+    private string $number;
+
     /**
      * @var string
      */
-    private $title = "";
-    
-    
+    private string $title;
+
+
     private $price;
-    
-    
+
+
     /**
      * Product constructor.
      *
@@ -36,32 +33,28 @@ class Product
         $this->title = $title;
         $this->price = $price;
     }
-    
-    
+
     /**
      * @return string
      */
-    public function getNumber()
+    public function getNumber(): string
     {
         return $this->number;
     }
-    
-    
+
     /**
      * @return string
      */
-    public function getTitle()
+    public function getTitle(): string
     {
         return $this->title;
     }
-    
-    
+
     public function getPrice()
     {
         return $this->price;
     }
-    
-    
+
     /**
      * @param Product $product
      *
@@ -71,12 +64,11 @@ class Product
     {
         return $this->getNumber() === $product->getNumber();
     }
-    
-    
+
     /**
      * @return string
      */
-    public function __toString()
+    public function __toString(): string
     {
         return "#" . $this->getNumber() . " " . $this->getTitle();
     }

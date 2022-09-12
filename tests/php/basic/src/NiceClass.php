@@ -6,8 +6,6 @@ namespace NiceshopsDev\NiceAcademy\Tests\Basic;
 
 class NiceClass
 {
-    
-    
     /**
      * @return string
      */
@@ -15,8 +13,7 @@ class NiceClass
     {
         return "be ";
     }
-    
-    
+
     /**
      * @return string
      */
